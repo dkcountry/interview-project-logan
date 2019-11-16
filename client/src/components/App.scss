@@ -1,0 +1,17 @@
+@import '../styles/config';
+
+.app {
+  &-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: $light_bg;
+    font-family: $font_helvetica;
+  }
+
+  &-main-content {
+    max-width: 600px;
+    padding: 40px 20px;
+  }
+}
