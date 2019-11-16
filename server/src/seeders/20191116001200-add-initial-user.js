@@ -7,6 +7,7 @@ module.exports = {
           {
             id: 1,
             firstName: "Test",
+            token: "123",
             createdAt: Sequelize.fn("now"),
             updatedAt: Sequelize.fn("now")
           }

@@ -2,9 +2,9 @@ const { Users } = require("./models");
 
 const authMiddleware = async (req, res, next) => {
   try {
-    const userId = parseInt(req.get("Authorization").split(" ")[1]);
+    const token = parseInt(req.get("Authorization").split(" ")[1]);
     const user = await Users.findOne({
-      where: { id: userId }
+      where: { token }
     });
     if (user) {
       req.user = user.dataValues;

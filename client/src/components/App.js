@@ -16,7 +16,7 @@ class App extends React.Component {
   async componentDidMount() {
     const userRes = await axios.get("http://localhost:5006/user", {
       headers: {
-        Authorization: "Bearer 1"
+        Authorization: "Bearer 123"
       }
     });
 

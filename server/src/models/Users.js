@@ -12,6 +12,9 @@ module.exports = dbConnection => {
       },
       firstName: {
         type: Sequelize.TEXT
+      },
+      token: {
+        type: Sequelize.TEXT
       }
     },
     {
