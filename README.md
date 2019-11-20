@@ -1,4 +1,4 @@
-# interviewapp-jaime
+# interviewapp-logan
 
 ## Prerequisites
 
