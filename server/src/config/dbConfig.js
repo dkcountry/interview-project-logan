@@ -4,6 +4,7 @@ module.exports = {
     host: "localhost",
     username: "root",
     password: "root",
-    database: "interviewdb"
+    database: "interviewdb",
+    logging: true,
   }
 };

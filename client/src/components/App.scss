@@ -8,10 +8,33 @@
     min-height: 100vh;
     background: $light_bg;
     font-family: $font_helvetica;
+    
+    &-content {
+      box-sizing: border-box;
+      padding: 20px;
+      width: 100%;
+      max-width: 600px;
+
+      & h1 {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      & p {
+        font-size: 1rem;
+        color: #717573;
+        font-weight: 300;
+      }
+
+      & button {
+        margin-top: 40px;
+        background-color: #3F8E5A;
+        color: white;
+        padding: 10px 60px;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+    }
   }
 
-  &-main-content {
-    max-width: 600px;
-    padding: 40px 20px;
-  }
 }

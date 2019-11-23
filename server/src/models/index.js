@@ -5,5 +5,15 @@ const dbConfigEnv = require("../config/dbConfig")[NODE_ENV];
 const dbConnection = new Sequelize(dbConfigEnv);
 
 const Users = require("./Users")(dbConnection);
+const States = require("./States")(dbConnection);
+const UserState = dbConnection.define('user_state');
 
-module.exports = { Users };
+Users.belongsToMany(States, {
+	through: 'UserState'
+});
+
+States.belongsToMany(Users, {
+	through: 'UserState'
+})
+
+module.exports = { Users, States };
